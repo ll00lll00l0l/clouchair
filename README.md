@@ -1,2 +1,2 @@
 # clouchair
-econ site
+ecommerce website using python django 
