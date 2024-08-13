@@ -1,0 +1,341 @@
+{% load static %}
+<html lang="en">
+    <!DOCTYPE html>
+    <html lang="en">
+    
+    <head>
+        <meta charset="utf-8">
+        <title>CLOUCHAIR</title>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <meta content="Free HTML Templates" name="keywords">
+        <meta content="Free HTML Templates" name="description">
+    
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous"></script>
+    
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+     <link href="https://fonts.googleapis.com/css?family=Shantell+Sans:300,regular,500,600,700,800,300italic,italic,500italic,600italic,700italic,800italic" rel="stylesheet" />
+
+     
+     <link rel="website icon" type="png" href="{% static 'img/logo.png' %}"> 
+    <script>
+      let titleText=["CLOUCHAIR","chairs of heaven"];
+      let counter=0;
+      setInterval(function() {
+          document.title=titleText[counter % titleText.length];
+          counter++;
+      }, 1100);
+  </script>
+
+
+    
+  
+<style > 
+logoo{
+  
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+
+  
+.alignn {
+  display: flex;
+  align-items: center;
+}
+
+.text {
+  margin-left: 10px;
+}
+
+  .navbar {
+  
+   
+  box-shadow: 0px 2px 4px #a0b8f6;
+ 
+  background: transparent;
+    backdrop-filter: blur(10px);
+    box-shadow.blink:before {
+  
+  position:relative;
+
+
+}
+b.blink {
+  animation: blink 2s infinite;
+}
+
+@keyframes blink {
+  50% {
+      opacity: .2;
+  }
+}
+b.blink:hover {
+  animation: blink .5s infinite;
+}
+    
+
+
+}
+ #navbar{
+    background: transparent;
+    backdrop-filter: blur(8px);
+    
+  }
+   
+.center{ 
+  display:grid;
+  place-items: center;
+
+}
+
+.text-container {
+      position: relative;
+      height: 90px;
+      
+    }
+
+    .dropping-text {
+      position: relative;
+      top: 10px;
+      animation: dropAnimation 3s linear infinite;
+    }
+
+    @keyframes dropAnimation {
+      0% {
+        top: -20px;
+        opacity: 0;
+      }
+      50% {
+        top: 50%;
+        opacity: 1;
+      }
+      100% {
+        top: 100%;
+        opacity: 0;
+      }
+    }
+    @import url('https://fonts.googleapis.com/css?family=Montserrat:600&display=swap');
+
+
+.over-text {
+  position: absolute;
+  
+  top: 15px;
+  left: -35px;
+  font-size: 10px;
+  color: rgb(88, 86, 86);
+  white-space: nowrap;
+  padding: 40px;
+  
+}
+ 
+.text-container {
+  position: relative;
+  font-size: 20px;
+}
+  .logoo {
+  position: relative;
+  
+  
+  
+  
+  
+  
+}
+.wave-footer {
+    background: #3498db; 
+    padding: 20px 0;
+    position: relative;
+  }
+  
+  .wave-footer:before {
+    content: "";
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+    right: 0;
+    height: 100px;
+    background: #3498db; /* Use the same background color as the footer */
+    border-radius: 50%;
+    transform: scaleY(2) translateZ(0);
+  }
+  .gradient {
+      width:100%;
+      height: 600px;
+      background: linear-gradient(to top, #faf7f7, #a1a0a8);
+      /* Replace #ff0000 and #00ff00 with your desired gradient colors */
+      /* You can also adjust the direction (to bottom right, to top, etc.) */
+    }
+</style>
+<style>
+  .blur-container {
+    position: relative;
+    width: 100%;
+    height: 700px;
+    overflow: hidden;
+  }
+
+  .blur-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: blur(1px); /* Apply the blur effect to the entire image */
+  }
+
+  .gradient-mask {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 60%; /* Adjust the height to control the area to be blurred */
+    background: linear-gradient(to bottom, transparent, rgb(254, 254, 254)); /* Use white or the background color of your page */
+  }
+  .inner-image {
+      position: absolute;
+    
+      top: 40%;
+      left: 50%;
+      transform: translate(-30%, -50%);
+     
+    }
+    .overlay {
+  position: absolute;
+  top: 50%; 
+  left: 50%;
+  transform: translate(-50%, -50%); 
+  z-index: 1; 
+  text-align:center; 
+}
+.zoom{
+
+overflow: hidden;
+}
+.zoom img{
+transition: transform .5s ease;
+}
+.zoom:hover img{
+transform: scale(1.2);
+}
+.imge {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+
+
+</style>
+
+
+    </head>
+    
+    <body >
+       
+        
+      
+
+    <nav id="nav" class=" navbar navbar-expand-lg navbar-light sticky-top blink"  >
+            
+      <a class=""href="#"> <img  class="logoo" src=" {% static 'img/logo.png' %}" style="width: 60px; height: 70px;"style=""> </a> 
+                  
+                    <span class="text-container mx-2 alignn">
+                        CLOUCHAIR
+                        <span class="over-text">chairs of heaven</span>
+                      </span>
+                     
+      
+        <button type="button" class="navbar-toggler border-0" data-toggle="collapse" data-target="#navbarCollapse">
+          <i id="my-icon" class="fa  fa-tags fa-lg  fa-rotate-270"></i>
+      </button>
+        
+        <div class="collapse navbar-collapse " id="navbarCollapse">
+          <div class="navbar-nav mx-auto" >
+                
+                        <a href="index" class="nav-item nav-link active  "style="font-family:Shantell sans;">HOME</a>
+                        <a href="aboutus.html" class="nav-item nav-link "style="font-family:Shantell sans;">ABOUT US</a>
+                        <a href="destination.html" class="nav-item nav-link  "style="font-family:Shantell sans;">DESIGN</a>
+                        <a href="packages.html" class="nav-item nav-link "style="font-family:Shantell sans;">SHOP</a>
+                        <a href="contact.html" class="nav-item nav-link  "style="font-family:Shantell sans;">CONTACT US</a>
+             
+                  <i class="fa fa-phone  mx-2 nav-item nav-link"style="font-size:20px ;color:darkgrey;">&nbsp;</i>
+                  <i class="fa fa-whatsapp mx-2 nav-item nav-link"style="font-size:20px;color:green;"></i></li>
+                  <li><a href="cart">
+                    <i class="fa fa-shopping-cart mx-2 nav-item nav-link"style="font-size:20px;color:darkgrey;">&nbsp;</i>
+                 </a> </li>
+               
+  
+            
+            </div></div>
+  </nav> 
+  <div class="container ">
+    <div class="card  ">
+  <div class=" mx-auto d-block ">
+
+       <div class="col-md-12">
+             {% for product in products %}
+             <img src="{{ product.image.url }}" alt="{{ product.name }}" style="width: 300px; height: 100%;">
+                    <h2>{{ product.name }}</h2>
+                     <p>Price: {{ product.price }}</p>
+                     <p></p>
+             <div class="buy_bt center"><form action="/add-to-cart/{{ product.id }}/" method="POST">
+                {% csrf_token %}
+               
+                <button type="submit">Add to Cart</button>
+              </form></div>
+              {% empty %}
+           <p>No products available.</p>
+             {% endfor %}
+          </div>
+       </div>
+      
+</div>
+</div>
+<br><br>
+<div class="card-footer  text-secondary" style="background-color:rgb(19, 17, 17) ; ">
+  <br><br>
+   <div class="row"> 
+       <div class="col-lg-4"> 
+
+       </div>	
+
+     <div class="col-lg-4" >
+            <ul style="list-style: none;" ><a herf="#" class= "nav-item h4 text-danger ">PAGE</a><li><br></li>
+            
+                <li><a href="aboutus.html"class="text-light h6">ABOUT US</a></li><li><br></li>
+                <li><a href="design.html"class="text-light h6">DESIGN</a></li><li><br></li>
+                <li><a href="shop.html"class="text-light h6">SHOP NOW</a></li><li><br></li>
+              </ul>
+     </div>
+       <div  id="contact"class="col-lg-4" >
+            <ul style="list-style: none;"><a herf="#" class= "nav-item h4 text-danger ">CONTACT US</a><li><br></li>
+            
+             <li><a href="about.url"class="text-light h6">EMAIL</a></li><li><br></li>
+             <li class="text-light ">PHONE:&nbsp;<a href="about.url"class="text-PRIMARY h5">9876543210</a></li><li><br></li>
+             <li><a href="about.url"class="text-light h6">OFFICE LOCATION</a></li><li><br></li>
+             <li><i class="fa fa-facebook mx-2"style="font-size:25px ;color:blue;">&nbsp;</i>
+                <i class="fa fa-instagram mx-2"style="font-size:25px;color:crimson;">&nbsp;
+             </i><i class="fa fa-twitter mx-2"style="font-size:25px;color:cornflowerblue;"></i></li>
+            </ul>
+            <br>
+            <br>
+            <br>
+       </div>
+    </div>
+</div>
+
+
+<!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> -->
+<!-- <script>
+  $(document).ready(function() {
+    $('.gradient-mask .inner-image').removeClass('inner-image');
+});
+</script> -->
+</body>
+
+
+
+</html>

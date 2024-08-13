@@ -1,0 +1,45 @@
+       .mail_text {
+         width: 100%;
+         float: left;
+         font-size: 16px;
+         color: #4f4e4e;
+         border: 1px solid #8e8e8e;
+         background-color: #ffff;
+         padding: 15px;
+         margin-top: 20px;
+         border-radius: 5px;
+       }
+       .header_section {
+    width: 100%;
+    float: left;
+    background-image: url(../images/banner-bg.png);
+    height: auto;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+.mail_section_1 {
+    width: 100%;
+    margin: 0 auto;
+
+}
+send_bt {
+   width: 170px;
+   margin: 0 auto;
+   text-align: center;
+}
+send_bt a {
+   width: 100%;
+   float: left;
+   background-color: #7c2c0c;
+   color: #ffffff;
+   text-align: center;
+   padding: 10px 0px;
+   font-size: 16px;
+   margin-top: 40px;
+   border: 1px solid #7c2c0c;
+   font-weight: 500;
+}
+send_bt a:hover {
+   background-color: transparent;
+   color: #7c2c0c;
+}
